@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /VGhpcyBpcyBhIGZha2U=
+Disallow: /WW91IGFyZSBmb29sZWQ=
+Disallow: /lbhe ner ntnva sbbqrq
+Disallow: /QWQsbmFxLmlubmFucw==
