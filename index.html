@@ -1,126 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muhammed Ramees KP | Cybersecurity Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #0f2027);
-    background-size: 400% 400%;
-    animation: gradientMove 15s ease infinite;
-    color:white;
-    overflow-x:hidden;
-}
-
-@keyframes gradientMove{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
-
-nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    padding:20px;
-    background:rgba(0,0,0,0.4);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
-
-nav a{
-    color:#00f2ff;
-    text-decoration:none;
-    font-weight:500;
-    transition:0.3s;
-}
-
-nav a:hover{
-    text-shadow:0 0 10px #00f2ff;
-}
-
-header{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-header h1{
-    font-family:'Orbitron',sans-serif;
-    font-size:55px;
-    color:#00f2ff;
-    text-shadow:0 0 20px #00f2ff;
-    animation:fadeIn 2s ease;
-}
-
-header p{
-    margin-top:15px;
-    font-size:18px;
-    opacity:0.8;
-    animation:fadeIn 3s ease;
-}
-
-section{
-    padding:120px 10%;
-    opacity:0;
-    transform:translateY(50px);
-    transition:all 1s ease;
-}
-
-section.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-h2{
-    margin-bottom:30px;
-    color:#00f2ff;
-    font-family:'Orbitron',sans-serif;
-}
-
-.card{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(0,255,255,0.3);
-    backdrop-filter:blur(10px);
-    padding:25px;
-    border-radius:15px;
-    margin-bottom:20px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 20px #00f2ff;
-}
-
-footer{
-    text-align:center;
-    padding:40px;
-    opacity:0.6;
-}
-
-@keyframes fadeIn{
-    from{opacity:0;transform:translateY(-20px);}
-    to{opacity:1;transform:translateY(0);}
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -130,76 +13,50 @@ footer{
 <a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
 <a href="#education">Education</a>
-<a href="#contact">Contact</a>
+<a href="#game">Cyber Game</a>
 </nav>
 
 <header>
 <h1>Muhammed Ramees KP</h1>
-<p>Cybersecurity Analyst | VAPT Specialist | Penetration Tester</p>
+<p>Cybersecurity Analyst | VAPT Specialist</p>
 </header>
 
 <section id="skills">
-<h2>Technical Skills</h2>
+<h2>Skills</h2>
 <div class="card">
-Network Penetration Testing<br>
-Web Application Security Testing<br>
-Android Application Testing<br>
-Active Directory Exploitation<br>
-VLAN & Firewall Configuration<br>
-Server Configuration
+Network Pentesting | Web | Android | Active Directory<br>
+VLAN | Firewall | Server Configuration
 </div>
 </section>
 
 <section id="experience">
 <h2>Experience</h2>
-<div class="card">Cybersecurity Analyst – Sysin Technologies LLP (Current)</div>
-<div class="card">Cybersecurity Instructor – Keltron Advanced Studies</div>
-<div class="card">Cybersecurity Researcher – Info Campus</div>
-<div class="card">Cybersecurity Student – eHackify Research & Training</div>
+<div class="card">Cybersecurity Analyst – Sysin Technologies LLP</div>
+<div class="card">Instructor – Keltron Advanced Studies</div>
+<div class="card">Researcher – Info Campus</div>
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
-<div class="card">Web Application Security Assessment (Manual & Automated Testing)</div>
-<div class="card">Active Directory Lab Setup & Attack Simulation</div>
-<div class="card">TryHackMe Practical Labs & Reporting</div>
+<div class="card">Web Application Security Assessment</div>
+<div class="card">Active Directory Lab Setup</div>
 </section>
 
 <section id="education">
 <h2>Education</h2>
 <div class="card">
 BSc Mathematics & Physics (Double Main)<br>
-EMEA Arts & Science College, Kondotty
+EMEA Arts & Science College
 </div>
 </section>
 
-<section id="contact">
-<h2>Contact</h2>
-<div class="card">
-Email: rameeskpplr456@gmail.com@gmail.com<br>
-GitHub: github.com/Ramihere
-</div>
+<section id="game">
+<h2>Mini Cyber Game – Click the Hacker</h2>
+<p id="score">Score: 0</p>
+<canvas id="gameCanvas" width="400" height="200"></canvas>
 </section>
 
-<footer>
-© 2026 Muhammed Ramees KP | Cybersecurity Portfolio
-</footer>
-
-<script>
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll",()=>{
-    sections.forEach(sec=>{
-        const top = window.scrollY;
-        const offset = sec.offsetTop - 500;
-        const height = sec.offsetHeight;
-
-        if(top >= offset && top < offset + height){
-            sec.classList.add("show");
-        }
-    });
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
