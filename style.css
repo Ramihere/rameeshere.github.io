@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+nav a{
+    color:#00eaff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    text-shadow:0 0 10px #00eaff;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+header h1{
+    font-size:50px;
+    color:#00eaff;
+}
+
+section{
+    padding:120px 10%;
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
+
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #00eaff;
+}
+
+#gameCanvas{
+    background:black;
+    display:block;
+    margin:20px auto;
+    border:2px solid #00eaff;
+}
