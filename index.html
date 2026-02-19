@@ -1,148 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Muhammed Ramees KP | Cybersecurity Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammed Ramees KP | Cybersecurity Portfolio</title>
 
-    <style>
-        body {
-            background-color: #0d0d0d;
-            color: #00ff00;
-            font-family: Consolas, monospace;
-            margin: 0;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        header {
-            text-align: center;
-            padding: 40px;
-            border-bottom: 1px solid #00ff00;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        h1 {
-            font-size: 40px;
-        }
+body{
+    background: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+}
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #111;
-            padding: 15px;
-            border-bottom: 1px solid #003300;
-        }
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+}
 
-        nav button {
-            background: none;
-            border: 1px solid #00ff00;
-            color: #00ff00;
-            padding: 10px 20px;
-            margin: 0 10px;
-            cursor: pointer;
-        }
+header h1{
+    font-size:50px;
+    color:#38bdf8;
+}
 
-        nav button:hover {
-            background: #003300;
-        }
+header p{
+    margin-top:15px;
+    font-size:18px;
+    color:#94a3b8;
+}
 
-        section {
-            display: none;
-            padding: 40px;
-        }
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0f172a;
+    padding:15px 0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    border-bottom:1px solid #1e293b;
+    z-index:1000;
+}
 
-        .box {
-            background: #111;
-            padding: 20px;
-            border: 1px solid #00ff00;
-        }
+nav a{
+    color:#e2e8f0;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            border-top: 1px solid #00ff00;
-        }
-    </style>
+nav a:hover{
+    color:#38bdf8;
+}
 
-    <script>
-        function showSection(id) {
-            var sections = document.querySelectorAll("section");
-            sections.forEach(function(section) {
-                section.style.display = "none";
-            });
-            document.getElementById(id).style.display = "block";
-        }
-    </script>
+section{
+    padding:100px 10%;
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
 
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#273549;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0f172a;
+    border-top:1px solid #1e293b;
+    color:#94a3b8;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>⚡ Muhammed Ramees KP ⚡</h1>
-    <p>Cybersecurity Analyst | VAPT Specialist | Penetration Tester</p>
-</header>
-
 <nav>
-    <button onclick="showSection('skills')">Skills</button>
-    <button onclick="showSection('experience')">Experience</button>
-    <button onclick="showSection('projects')">Projects</button>
-    <button onclick="showSection('education')">Education</button>
-    <button onclick="showSection('contact')">Contact</button>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
 </nav>
 
+<header>
+<h1>Muhammed Ramees KP</h1>
+<p>Cybersecurity Analyst | VAPT Specialist | Penetration Tester</p>
+</header>
+
 <section id="skills">
-    <div class="box">
-        <h2>Technical Skills</h2>
-        <p>• Network Penetration Testing</p>
-        <p>• Web Application Security Testing</p>
-        <p>• Android Application Testing</p>
-        <p>• Active Directory Exploitation</p>
-        <p>• Network Infrastructure Solutions</p>
-        <p>• VLAN Configuration</p>
-        <p>• Firewall Configuration</p>
-        <p>• Server Configuration</p>
-    </div>
+<h2>Technical Skills</h2>
+<div class="card">
+Network Penetration Testing<br>
+Web Application Security Testing<br>
+Android Application Testing<br>
+Active Directory Exploitation<br>
+VLAN & Firewall Configuration<br>
+Server Configuration
+</div>
 </section>
 
 <section id="experience">
-    <div class="box">
-        <h2>Professional Experience</h2>
-        <p>• Cybersecurity Student – eHackify Cybersecurity Research & Training</p>
-        <p>• Cybersecurity Researcher – Info Campus</p>
-        <p>• Cybersecurity Instructor – Keltron Advanced Studies</p>
-        <p>• Cybersecurity Analyst – Sysin Technologies LLP (Current)</p>
-    </div>
+<h2>Professional Experience</h2>
+<div class="card">
+Cybersecurity Analyst – Sysin Technologies LLP (Current)
+</div>
+<div class="card">
+Cybersecurity Instructor – Keltron Advanced Studies
+</div>
+<div class="card">
+Cybersecurity Researcher – Info Campus
+</div>
+<div class="card">
+Cybersecurity Student – eHackify Research & Training
+</div>
 </section>
 
 <section id="projects">
-    <div class="box">
-        <h2>Projects</h2>
-        <p>• Web Application Security Assessment (Manual + Automated Testing)</p>
-        <p>• Active Directory Lab Setup & Attack Simulation</p>
-        <p>• Vulnerability Reporting & Risk Classification</p>
-        <p>• TryHackMe Practical Labs</p>
-    </div>
+<h2>Projects</h2>
+<div class="card">
+Web Application Security Assessment (Manual & Automated Testing)
+</div>
+<div class="card">
+Active Directory Lab Setup & Attack Simulation
+</div>
+<div class="card">
+TryHackMe Practical Labs & Vulnerability Reporting
+</div>
 </section>
 
 <section id="education">
-    <div class="box">
-        <h2>Education</h2>
-        <p>BSc Mathematics & Physics (Double Main)</p>
-        <p>EMEA Arts & Science College, Kondotty</p>
-    </div>
+<h2>Education</h2>
+<div class="card">
+BSc Mathematics & Physics (Double Main)<br>
+EMEA Arts & Science College, Kondotty
+</div>
 </section>
 
 <section id="contact">
-    <div class="box">
-        <h2>Contact</h2>
-        <p>Email: yourmail@gmail.com</p>
-        <p>GitHub: https://github.com/Ramihere</p>
-    </div>
+<h2>Contact</h2>
+<div class="card">
+Email: yourmail@gmail.com<br>
+GitHub: https://github.com/Ramihere
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Muhammed Ramees KP | Cybersecurity Portfolio</p>
+© 2026 Muhammed Ramees KP | Cybersecurity Portfolio
 </footer>
 
 <script>
-    showSection('skills');
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 400;
+        const height = sec.offsetHeight;
+
+        if(top >= offset && top < offset + height){
+            sec.classList.add("show");
+        }
+    });
+});
 </script>
 
 </body>
