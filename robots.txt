@@ -1,11 +1,6 @@
-# Robots.txt - Nothing to see here... or is there?
-
-# 1. /L05vdCBoZXJlIGJybyA=
-# 2. /Abguvat urer
-# 3. L0JybyBjaGlsbCBicm8uLiEh
-# 4. /Nqzva#456!
-# 5. /L2Zha2U/
-
 User-agent: *
-Disallow: /Nqzva#456!
-Disallow: /L2Zha2U/
+Disallow: /Tm90IGhlcmUgYnJv
+Disallow: /Tm90aGluZyBoZXJl
+Disallow: /QnJvIGNoaWxsIGJybw==
+Disallow: /QWRtaW40NTY=
+Disallow: /ZmFrZQ==
