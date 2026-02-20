@@ -1,65 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammed Ramees KP | Cybersecurity Analyst</title>
-    <style>
-        body { background-color: #0a0a0a; color: #00ff41; font-family: 'Courier New', Courier, monospace; line-height: 1.6; padding: 20px; }
-        .container { max-width: 900px; margin: auto; border: 1px solid #00ff41; padding: 30px; box-shadow: 0 0 15px #00ff41; }
-        h1, h2 { text-align: center; text-transform: uppercase; letter-spacing: 5px; }
-        .section { margin-top: 40px; border-top: 1px solid #333; pt: 20px; }
-        .skill-tag { display: inline-block; background: #003300; padding: 5px 10px; margin: 5px; border-radius: 3px; font-size: 0.9em; }
-        a { color: #00ff41; text-decoration: none; }
-        a:hover { background: #00ff41; color: #000; }
-        .hidden-comment { display: none; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammed Ramees KP | Cybersecurity Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+scroll-behavior:smooth;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+nav a{
+color:#00eaff;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+text-shadow:0 0 10px #00eaff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+color:#00eaff;
+}
+
+section{
+padding:120px 10%;
+}
+
+h2{
+margin-bottom:20px;
+color:#00eaff;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+border:1px solid rgba(0,255,255,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+box-shadow:0 0 20px #00eaff;
+}
+</style>
+
+<!--
+WW91IHN1Y2Nlc3NmdWxseSBmb29sZWQ=
+YnJvLCBhcmUgeW91IHNlcmlvdXMgYnJvPw==
+cm9ib3RzLnR4dA==
+-->
+
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <h1>MUHAMMED RAMEES KP</h1>
-        <p style="text-align:center;">Cybersecurity Analyst @ Sysin Technologies LLP</p>
-    </header>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+</nav>
 
-    <div class="section">
-        <h2>Professional Summary</h2>
-        [cite_start]<p>Cybersecurity professional and researcher[cite: 16]. Currently serving as a <strong>Cybersecurity Analyst at Sysin Technologies LLP</strong>. [cite_start]Former Trainer at Keltron Advanced Studies [cite: 12] [cite_start]and Infocampus[cite: 17]. [cite_start]Specialist in Web, Network, and Active Directory penetration testing[cite: 8, 28, 31].</p>
-    </div>
-
-    <div class="section">
-        <h2>Technical Skills</h2>
-        [cite_start]<div class="skill-tag">Network Penetration Testing (Nmap, Metasploit)</div> [cite: 29]
-        [cite_start]<div class="skill-tag">Web App Testing (Burp Suite, SQLMap)</div> [cite: 32]
-        [cite_start]<div class="skill-tag">API Security (Postman)</div> [cite: 35]
-        [cite_start]<div class="skill-tag">Android Pentesting (MobSF, Frida)</div> [cite: 38]
-        [cite_start]<div class="skill-tag">Active Directory (BloodHound, Mimikatz)</div> [cite: 41]
-    </div>
-
-    <div class="section" id="education">
-        <h2>Education</h2>
-        [cite_start]<p><strong>BSc Mathematics and Physics (Double Main)</strong> [cite: 61]<br>
-        [cite_start]EMEA Arts and Science College, Kondotty (2021-2024) [cite: 61, 62]</p>
-        
-        <p style="color: #0a0a0a;">S29objIzMQ==</p>
-        
-        [cite_start]<p><strong>Advanced Penetration Testing Certification</strong> [cite: 44, 59]<br>
-        [cite_start]Ehackify Training & Research Institute (2024-2025) [cite: 60]</p>
-    </div>
-
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            [cite_start]<li><strong>LPG Gas Leakage Detection:</strong> Arduino-based IoT tool[cite: 50, 51].</li>
-            [cite_start]<li><strong>Active Directory Lab:</strong> Configured GPO and simulated Kerberos attacks[cite: 52, 54].</li>
-        </ul>
-    </div>
-
-    <footer style="margin-top: 50px; font-size: 0.8em; text-align: center;">
-        <p>© 2026 Ramees KP | [cite_start]+91 9544069292 [cite: 5]</p>
-    </footer>
+<div class="hero">
+<h1>MUHAMMED RAMEES KP</h1>
+<p>Cybersecurity Analyst – Sysin Technologies LLP</p>
 </div>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+Cybersecurity professional with a background in Mathematics and Physics. Passionate about Web, Network, API, Android and Active Directory penetration testing.
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="card">
+Network Penetration Testing<br>
+Web Application Security Testing<br>
+API Penetration Testing<br>
+Android Application Security<br>
+Active Directory Exploitation<br>
+Burp Suite, Nmap, Metasploit, BloodHound, Mimikatz
+</div>
+</section>
+
+<section id="experience">
+<h2>Professional Experience</h2>
+
+<div class="card">
+<strong>Cybersecurity Analyst</strong><br>
+Sysin Technologies LLP (Current)
+</div>
+
+<div class="card">
+Cybersecurity Trainer – Keltron Advanced Studies
+</div>
+
+<div class="card">
+Cybersecurity Trainer & Researcher – Infocampus
+</div>
+
+<div class="card">
+Advanced Penetration Tester – Ehackify Research & Training
+</div>
+
+</section>
+
+<section id="education">
+<h2>Education</h2>
+
+<div class="card">
+BSc Mathematics & Physics (Double Main)<br>
+EMEA Arts & Science College Kondotty<br><br>
+
+<span style="font-size:11px; opacity:0.3;">
+Sm9objIzMQ==
+</span>
+
+</div>
+
+</section>
 
 </body>
 </html>
