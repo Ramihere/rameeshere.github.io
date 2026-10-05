@@ -3,162 +3,150 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammed Ramees KP | Cybersecurity Analyst</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:white;
-scroll-behavior:smooth;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:center;
-gap:40px;
-padding:20px;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(8px);
-z-index:1000;
-}
-
-nav a{
-color:#00eaff;
-text-decoration:none;
-font-weight:500;
-}
-
-nav a:hover{
-text-shadow:0 0 10px #00eaff;
-}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{
-font-size:55px;
-color:#00eaff;
-}
-
-section{
-padding:120px 10%;
-}
-
-h2{
-margin-bottom:20px;
-color:#00eaff;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-padding:25px;
-border-radius:10px;
-margin-bottom:20px;
-border:1px solid rgba(0,255,255,0.3);
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.03);
-box-shadow:0 0 20px #00eaff;
-}
-</style>
-
-<!--
-WW91IHN1Y2Nlc3NmdWxseSBmb29sZWQ=
-YnJvLCBhcmUgeW91IHNlcmlvdXMgYnJvPw==
-cm9ib3RzLnR4dA==
--->
-
+<meta name="description" content="Muhammed Ramees KP — Network Security Engineer specializing in network security, VAPT, SOC and security infrastructure.">
+<meta name="theme-color" content="#050b0a">
+<title>Muhammed Ramees KP | Network Security Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<div class="noise"></div>
+<div class="cursor-glow"></div>
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
-</nav>
+<header class="nav">
+  <a class="brand" href="#home">RK<span>.</span></a>
+  <nav class="desktop-nav">
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <a class="nav-cta" href="#contact">LET'S TALK <span>↗</span></a>
+  <button class="menu-btn" aria-label="Open navigation">☰</button>
+</header>
 
-<div class="hero">
-<h1>MUHAMMED RAMEES KP</h1>
-<p>Cybersecurity Analyst – Sysin Technologies LLP</p>
-</div>
+<main>
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span> CYBERSECURITY • VAPT • SOC • NETWORK SECURITY</div>
+    <h1>MUHAMMED<br><span>RAMEES KP</span></h1>
+    <h2>NETWORK SECURITY<br>ENGINEER</h2>
+    <p class="hero-text">Network Security Engineer with hands-on experience across firewall administration, network security, VAPT, SOC operations and infrastructure security. I combine offensive security knowledge with practical engineering to identify weaknesses, secure networks and build resilient systems.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">VIEW MY WORK <span>↗</span></a>
+      <a class="btn btn-ghost" href="https://github.com/Ramihere/rameeshere.github.io" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>VAPT</strong><span>Web • API • Network</span></div>
+      <div><strong>SOC / SIEM</strong><span>Wazuh • Splunk • FIM</span></div>
+      <div><strong>NETWORK</strong><span>FortiGate • VLAN • Cisco</span></div>
+    </div>
+  </div>
 
-<section id="about">
-<h2>About Me</h2>
-<div class="card">
-Cybersecurity professional with a background in Mathematics and Physics. Passionate about Web, Network, API, Android and Active Directory penetration testing.
-</div>
+  <div class="hero-art">
+    <div class="art-frame">
+      <div class="cyber-visual">
+        <div class="visual-grid"></div>
+        <div class="monitor monitor-a"><b>VAPT</b><span>$ nmap -sV target</span><span>80/tcp OPEN http</span><span>443/tcp OPEN https</span></div>
+        <div class="monitor monitor-b"><b>SOC / SIEM</b><span>[+] AUTH EVENT</span><span>[!] ANOMALY</span><span>[+] FIM OK</span></div>
+        <div class="monitor monitor-c"><b>FORTIGATE</b><span>TRAFFIC MONITOR</span><span>VLAN 100 / DATA</span><span>POLICY ALLOW</span></div>
+        <div class="operator">
+          <div class="head"></div><div class="body"></div><div class="desk"></div>
+        </div>
+        <div class="glow-ring"></div>
+      </div>
+      <div class="art-label top">SECURITY LAB // ONLINE</div>
+      <div class="art-label bottom">01 / 05 — ENGINEERING MODE</div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-top"><span></span><span></span><span></span><b>ramees@security:~</b></div>
+      <div class="terminal-body">
+        <p><i>$</i> whoami</p><p class="cyan">network_security_engineer</p>
+        <p><i>$</i> focus</p><p class="cyan">NETWORK / VAPT / SOC</p>
+        <p><i>$</i> status</p><p class="green">SYSTEMS SECURED ✓</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-<h2>Technical Skills</h2>
-<div class="card">
-Network Penetration Testing<br>
-Web Application Security Testing<br>
-API Penetration Testing<br>
-Android Application Security<br>
-Active Directory Exploitation<br>
-Burp Suite, Nmap, Metasploit, BloodHound, Mimikatz
-</div>
+<section class="marquee"><div>VULNERABILITY ASSESSMENT <span>✦</span> PENETRATION TESTING <span>✦</span> SOC OPERATIONS <span>✦</span> NETWORK SECURITY <span>✦</span> ACTIVE DIRECTORY <span>✦</span> FIREWALL ENGINEERING <span>✦</span></div></section>
+
+<section class="section" id="about">
+  <div class="section-kicker">01 / ABOUT</div>
+  <div class="about-grid">
+    <div><h2 class="section-title">SECURITY IS<br><span>A MINDSET.</span></h2></div>
+    <div class="about-copy">
+      <p class="lead">From penetration testing and security research to network security engineering, my work sits where offensive thinking meets practical defense.</p>
+      <p>I've worked across web, API, Android, Wi-Fi and Active Directory security, while also building experience with firewalls, VLANs, monitoring, SIEM and infrastructure operations.</p>
+      <div class="quote">“Find the weakness. Understand the path. Build the fix.”</div>
+    </div>
+  </div>
 </section>
 
-<section id="experience">
-<h2>Professional Experience</h2>
-
-<div class="card">
-<strong>Cybersecurity Analyst</strong><br>
-Sysin Technologies LLP (Current)
-</div>
-
-<div class="card">
-Cybersecurity Trainer – Keltron Advanced Studies
-</div>
-
-<div class="card">
-Cybersecurity Trainer & Researcher – Infocampus
-</div>
-
-<div class="card">
-Advanced Penetration Tester – Ehackify Research & Training
-</div>
-
+<section class="section skills" id="skills">
+  <div class="section-kicker">02 / SECURITY ARSENAL</div>
+  <div class="section-heading">
+    <h2 class="section-title">TOOLS I<br><span>WORK WITH.</span></h2>
+    <p>Security testing, monitoring and network engineering technologies used in hands-on labs and professional work.</p>
+  </div>
+  <div class="skill-grid">
+    <article class="skill-card"><b>01</b><h3>NETWORK SECURITY</h3><p>Firewall administration, network segmentation, VLANs, switching and traffic monitoring.</p><div class="tags"><span>FortiGate</span><span>Cisco</span><span>VLAN</span><span>Nmap</span></div></article>
+    <article class="skill-card"><b>02</b><h3>VAPT</h3><p>Web, API, network and Android application security testing and reporting.</p><div class="tags"><span>Burp Suite</span><span>Nessus</span><span>Metasploit</span><span>SQLMap</span></div></article>
+    <article class="skill-card"><b>03</b><h3>SOC / SIEM</h3><p>Endpoint visibility, centralized logging, FIM, alert investigation and threat detection.</p><div class="tags"><span>Wazuh</span><span>Splunk</span><span>Sysmon</span><span>FIM</span></div></article>
+    <article class="skill-card"><b>04</b><h3>AD SECURITY</h3><p>Active Directory enumeration, Kerberos attack paths, privilege escalation and lateral movement labs.</p><div class="tags"><span>BloodHound</span><span>Impacket</span><span>Mimikatz</span><span>Kerbrute</span></div></article>
+  </div>
 </section>
 
-<section id="education">
-<h2>Education</h2>
-
-<div class="card">
-BSc Mathematics & Physics (Double Main)<br>
-EMEA Arts & Science College Kondotty<br><br>
-
-<span style="font-size:11px; opacity:0.3;">
-Sm9objIzMQ==
-</span>
-
-</div>
-
+<section class="section projects" id="projects">
+  <div class="section-kicker">03 / SELECTED WORK</div>
+  <div class="section-heading"><h2 class="section-title">BUILT.<br><span>TESTED. LEARNED.</span></h2><p>Projects that demonstrate practical offensive security, blue-team monitoring and infrastructure engineering.</p></div>
+  <div class="project-list">
+    <article class="project-card featured"><div class="project-number">01</div><div class="project-content"><span class="project-type">SECURITY PLATFORM</span><h3>AI-POWERED SOC PLATFORM</h3><p>Designed a security monitoring concept combining centralized log management, File Integrity Monitoring, network traffic visibility, role-based dashboards and AI-assisted analysis.</p><div class="tags"><span>SIEM</span><span>Wazuh</span><span>FIM</span><span>RBAC</span></div><a class="project-link" href="https://github.com/Ramihere" target="_blank" rel="noreferrer">VIEW GITHUB ↗</a></div><div class="project-visual visual-soc"><span>SOC</span><div class="radar"></div></div></article>
+    <article class="project-card"><div class="project-number">02</div><div class="project-content"><span class="project-type">BLUE TEAM LAB</span><h3>WAZUH SECURITY MONITORING</h3><p>Deployed a Wazuh environment with Linux and Windows agents for security-event monitoring, endpoint visibility and investigation workflows.</p><div class="tags"><span>Wazuh</span><span>Windows</span><span>Linux</span><span>Monitoring</span></div><a class="project-link" href="https://github.com/Ramihere" target="_blank" rel="noreferrer">VIEW GITHUB ↗</a></div><div class="project-visual visual-wazuh"><span>WAZUH</span><div class="bars"></div></div></article>
+    <article class="project-card"><div class="project-number">03</div><div class="project-content"><span class="project-type">RED TEAM / LAB</span><h3>ACTIVE DIRECTORY SECURITY LAB</h3><p>Built a Windows domain lab and practiced enumeration, Kerberos attacks, privilege escalation, Pass-the-Hash, Silver Ticket, Golden Ticket and lateral movement.</p><div class="tags"><span>AD</span><span>Kerberos</span><span>BloodHound</span><span>Impacket</span></div><a class="project-link" href="https://github.com/Ramihere" target="_blank" rel="noreferrer">VIEW GITHUB ↗</a></div><div class="project-visual visual-ad"><span>AD</span><div class="nodes"></div></div></article>
+    <article class="project-card"><div class="project-number">04</div><div class="project-content"><span class="project-type">SIEM LAB</span><h3>SPLUNK SECURITY MONITORING</h3><p>Built a monitoring environment with dashboards and alerts for brute-force detection and suspicious activity investigation.</p><div class="tags"><span>Splunk</span><span>SIEM</span><span>Alerts</span><span>Dashboards</span></div><a class="project-link" href="https://github.com/Ramihere" target="_blank" rel="noreferrer">VIEW GITHUB ↗</a></div><div class="project-visual visual-splunk"><span>LOGS</span><div class="bars"></div></div></article>
+  </div>
 </section>
 
+<section class="section experience" id="experience">
+  <div class="section-kicker">04 / EXPERIENCE</div>
+  <div class="timeline">
+    <div class="timeline-item"><span class="time">JAN 2026 — PRESENT</span><div><h3>NETWORK SECURITY ENGINEER</h3><p>Working across network security, firewall administration, segmentation, monitoring, vulnerability assessment and infrastructure security.</p></div></div>
+    <div class="timeline-item"><span class="time">JUN 2025 — JAN 2026</span><div><h3>CYBERSECURITY RESEARCHER & TRAINER</h3><p>Infocampus Calicut — delivered hands-on training and research across ethical hacking, penetration testing, network security and practical security labs.</p></div></div>
+    <div class="timeline-item"><span class="time">JUL 2024 — MAR 2025</span><div><h3>ADVANCED PENETRATION TESTER TRAINING</h3><p>Ehackify Cybersecurity Research & Training — intensive practical training in network, API, Android and Active Directory security.</p></div></div>
+  </div>
+</section>
+
+<section class="section credentials">
+  <div class="section-kicker">05 / CREDENTIALS</div>
+  <div class="credential-grid">
+    <div class="credential-card"><span>CERTIFICATION</span><h3>ADVANCED PENETRATION TESTER</h3><p>Ehackify Cyber Security Research & Training</p></div>
+    <div class="credential-card"><span>CERTIFICATION</span><h3>CSEDP</h3><p>Certified Social Engineering Defense Practitioner — The SecOps Group</p></div>
+    <div class="credential-card"><span>CERTIFICATION</span><h3>INTRODUCTION TO CYBERSECURITY</h3><p>Cisco</p></div>
+    <div class="credential-card"><span>EDUCATION</span><h3>BSC MATHEMATICS & PHYSICS</h3><p>EMEA Arts & Science College, Kondotty • Calicut University • 2021–2024</p></div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="contact-box">
+    <div class="section-kicker">06 / CONTACT</div>
+    <h2>LET'S BUILD<br><span>SOMETHING SECURE.</span></h2>
+    <p>Open to cybersecurity, network security, VAPT and security engineering opportunities.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="mailto:rameeskpplr456@gmail.com">EMAIL ME ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/Ramihere" target="_blank" rel="noreferrer">GITHUB ↗</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/rameeskp" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><span>© <span id="year"></span> RAMEES KP</span><span>NETWORK SECURITY • VAPT • SOC</span><span>KOZHIKODE, KERALA</span></footer>
+<script src="script.js"></script>
 </body>
 </html>
